@@ -1,16 +1,15 @@
 ---
-import '@fontsource-variable/pixelify-sans/'
-import '@fontsource/vt323'
+import "@fontsource-variable/pixelify-sans/";
+import "@fontsource/vt323";
 
-import Header from "../components/Header.astro"
-import { ViewTransitions } from "astro:transitions"
+import Header from "../components/Header.astro";
+import { ViewTransitions } from "astro:transitions";
 
 interface Props {
-  title: string
-  description: string
+  title: string;
+  description: string;
 }
-
-const { description, title } = Astro.props
+const { description, title } = Astro.props;
 ---
 
 <!doctype html>
@@ -29,7 +28,7 @@ const { description, title } = Astro.props
     <div
       class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
       bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
-      dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+      dark:bg-gradient-to-t from-zinc-950 from-50% to-black to-50%)]"
     >
     </div>
     <Header />
@@ -38,11 +37,12 @@ const { description, title } = Astro.props
       :root {
         color-scheme: light dark;
       }
-      
+
       html {
-        font-family: "Vt323","Pixelify Sans Variable", system-ui, sans-serif;
+        font-family: "Vt323", "Pixelify Sans Variable", system-ui, sans-serif;
         scroll-behavior: smooth;
       }
+      
 
       body {
         color: rgba(17, 17, 17, 0.9);
@@ -50,6 +50,9 @@ const { description, title } = Astro.props
         flex-direction: column;
         min-height: 100vh;
         overscroll-behavior: none;
+      }
+      .background-default{
+        @apply bg-black/90
       }
 
       @media (prefers-reduced-motion: reduce) {
