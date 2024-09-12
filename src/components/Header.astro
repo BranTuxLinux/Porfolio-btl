@@ -1,28 +1,29 @@
 ---
-import ThemeToggle from "./ThemeToggle.astro"
-
+import Language from "./icons/Language.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+import Toaster from "react-hot-toast";
 const navItems = [
   {
     title: "Experiencia",
-    label: "experiencia",
-    url: "/#experiencia",
+    label: "Experience",
+    url: "/#Experience",
   },
   {
     title: "Proyectos",
-    label: "proyectos",
-    url: "/#proyectos",
+    label: "Projects",
+    url: "/#Projects",
   },
   {
     title: "Sobre mí",
-    label: "sobre-mi",
-    url: "/#sobre-mi",
+    label: "About Me",
+    url: "/#about-me",
   },
   {
     title: "Contacto",
-    label: "contacto",
-    url: "mailto:miduga@gmail.com",
+    label: "Contact",
+    url: "mailto:developerbvth@gmail.com",
   },
-]
+];
 ---
 
 <header
@@ -43,49 +44,65 @@ const navItems = [
       ))
     }
     <ThemeToggle />
+    <button
+    data-tooltip-target="tooltip-bottom"
+    data-tooltip-placement="bottom"
+    type="button"
+    >
+      <Language />
+    </button>
+
+    <div
+      id="tooltip-bottom"
+      role="tooltip"
+      class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+    >
+      Proximamente
+      <div class="tooltip-arrow" data-popper-arrow></div>
+    </div>
   </nav>
 </header>
 
 <script>
   document.addEventListener("astro:page-load", () => {
-    const sections = document.querySelectorAll("section")
-    const navItems = document.querySelectorAll("header nav a")
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll("header nav a");
 
     const callback = (entries: any[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           navItems.forEach((item) => {
             if (item.getAttribute("aria-label") == entry.target.id) {
-              item.classList.add("text-green")
+              item.classList.add("text-green");
             } else {
-              item.classList.remove("text-green")
+              item.classList.remove("text-green");
             }
-          })
+          });
         }
-      })
-    }
+      });
+    };
 
     const observer = new IntersectionObserver(callback, {
       root: null,
       rootMargin: "0px",
       threshold: 0.3,
-    })
+    });
 
     sections.forEach((section) => {
-      observer.observe(section)
-    })
+      observer.observe(section);
+    });
 
     // Cleanup function
     document.onvisibilitychange = () => {
       if (document.visibilityState === "hidden") {
-        observer.disconnect()
+        observer.disconnect();
       } else {
         sections.forEach((section) => {
-          observer.observe(section)
-        })
+          observer.observe(section);
+        });
       }
-    }
-  })
+    };
+  });
 </script>
 
 <style>
