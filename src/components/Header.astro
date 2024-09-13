@@ -1,25 +1,29 @@
 ---
-import Language from "./icons/Language.astro";
+import Language from "./Language.astro";
+import LanguageIcon from "./icons/LanguageIcon.astro";
 import ThemeToggle from "./ThemeToggle.astro";
-import Toaster from "react-hot-toast";
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const navItems = [
   {
-    title: "Experiencia",
+    title: t('nav.experience'),
     label: "Experience",
     url: "/#Experience",
   },
   {
-    title: "Proyectos",
+    title: t('nav.projects'),
     label: "Projects",
     url: "/#Projects",
   },
   {
-    title: "Sobre mí",
+    title: t('nav.aboutMe'),
     label: "About Me",
     url: "/#about-me",
   },
   {
-    title: "Contacto",
+    title: t('nav.contact'),
     label: "Contact",
     url: "mailto:developerbvth@gmail.com",
   },
@@ -44,13 +48,9 @@ const navItems = [
       ))
     }
     <ThemeToggle />
-    <button
-    data-tooltip-target="tooltip-bottom"
-    data-tooltip-placement="bottom"
-    type="button"
-    >
-      <Language />
-    </button>
+    <Language >
+      <LanguageIcon />
+    </Language>
 
     <div
       id="tooltip-bottom"
