@@ -28,6 +28,10 @@ const navItems = [
     url: "mailto:developerbvth@gmail.com",
   },
 ];
+const HandleLanguage = (url) => {
+  console.log(lang)
+  return lang == "en" ?  `/en${url}` :`${url}`;
+};
 ---
 
 <header
@@ -41,14 +45,14 @@ const navItems = [
         <a
           class="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-green-400"
           aria-label={link.label}
-          href={link.url}
+          href={HandleLanguage(link.url)}
         >
           {link.title}
         </a>
       ))
     }
     <ThemeToggle />
-    <Language >
+    <Language>
       <LanguageIcon class="hover:scale-110" />
     </Language>
 

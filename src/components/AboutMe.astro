@@ -2,8 +2,15 @@
 import { useTranslate } from "../i18n/useTranslate";
 
 const { t } = useTranslate(Astro.url);
-const DATA = t("AboutMe");
-console.log(DATA);
+interface DataType {
+  date: string;
+  title: string;
+  company: string;
+  description: string;
+  link: string;
+}
+const about = t("AboutMe");
+const DATA: DataType | any = about;
 ---
 
 <article class="flex lg:flex-row flex-col gap-8" id="about-me">
@@ -16,15 +23,11 @@ console.log(DATA);
     style="object-position: 50% 50%"
   />
   <div class="flex gap-8 flex-col">
-    {
-      DATA?.map((text) => (
-        <p set:html={text} />
-      ))
-    }
+    {DATA?.map((text) => <p set:html={text} />)}
   </div>
 </article>
 
-<style >
+<style>
   strong {
     @apply font-pixel text-green-300;
   }
