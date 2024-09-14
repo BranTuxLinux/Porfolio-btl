@@ -2,5 +2,5 @@
 
 ## Aun por hacer
 - Falta colores de light ❌
-- Falta idioma ingles ❌
+- Falta idioma ingles ✅
 - Falta Foto de RC Service ❌

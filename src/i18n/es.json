@@ -5,7 +5,7 @@
   "nav.contact": "Contacto",
   "badges.work": "Disponible para trabajar",
   "index.name": "Hola, soy Brandon.",
-  "index.description": "+2 años de experiencia. <strong>Ingeniero de Software.</strong> Medellín, Colombia 🇨🇴. Especializado en el desarrollo de aplicaciones web únicas.",
+  "index.description": "+2 años de experiencia. <strong class='text-green-300 font-pixel'>Ingeniero de Software.</strong> Medellín, Colombia 🇨🇴. Especializado en el desarrollo de aplicaciones web únicas.",
   "badges.contactMe": "Contáctame",
   "experience": [
     {
@@ -26,7 +26,7 @@
     {
       "title": "'Mesadoko'",
       "subTitle": "App móvil de aprendizaje",
-      "img": "/public/mesadoko.png",
+      "img": "/mesadoko.png",
       "company": "Disruptive IT",
       "description": "Desarrollé el backend con Node.js para el proyecto internacional Mesadoko de Mesa Davis Enterprises LLC, contribuyendo a su implementación mientras estudiaba. Fue mi primer proyecto a gran escala.",
       "technologies": ["NodeJS", "Express", "MySQL", "Prisma ORM"],
@@ -36,7 +36,7 @@
       "title": "SAS SIP Inventory",
       "subTitle": "Un servicio de inventario para supermercados",
       "company": "Disruptive IT",
-      "img": "/public/Inventory.png",
+      "img": "/Inventory.png",
       "description": "Lideré el proyecto web SAS SIP Inventory como desarrollador full-stack, enfocándome en soluciones escalables y eficientes con ReactJS. Transformé SAS SIP Inventory en una solución generalizada para supermercados, llamada 'SuperMarket Inventory', liderando todos los aspectos del desarrollo.",
       "technologies": [
         "ReactJS",
@@ -51,7 +51,7 @@
       "title": "RC SERVICE",
       "subTitle": "Proyecto formativo",
       "company": "Arrendamientos del Norte",
-      "img": "/public/Invetory.png",
+      "img": "/Invetory.png",
       "description": "Lideré el proyecto web SAS SIP Inventory como desarrollador full-stack, enfocándome en soluciones escalables y eficientes con ReactJS. Transformé SAS SIP Inventory en una solución generalizada para supermercados, llamada 'SuperMarket Inventory', liderando todos los aspectos del desarrollo.",
       "technologies": [
         "ReactJS",
@@ -62,5 +62,11 @@
         "Express"
       ]
     }
+  ],
+  "AboutMe": [
+    "Me llamo Brandon Quintero. Descubrí el mundo de la programación cuando tenía 11 años, gracias a los mods de Age of Empires 2. Luego de eso me enseñaron el sistema operativo Kali Linux y desde ese momento empezó mi gusto por la programación y la seguridad informática. Actualmente, <strong class='text-green-300 font-pixel'>Estoy colaborando con Disruptive IT como freelance.</strong>",
+    "Lideré el desarrollo del backend para un proyecto internacional, Mesadoko, una aplicación móvil de la empresa <strong class='text-green-300 font-pixel'>Mesa Davis Enterprises LLC en EE.UU.</strong> mientras estudiaba.",
+    "Liderazgo en Proyectos Full-Stack. Fui responsable del proyecto <strong class='text-green-300 font-pixel'>SAS SIP Inventory,</strong> transformándolo en una solución completa y escalable para supermercados, llamada <strong class='text-green-300 font-pixel'>SuperMarket Inventory.</strong> Dirigí todos los aspectos del desarrollo y mejoré la eficiencia de las soluciones web implementadas. Mejoras de Rendimiento.",
+    "En la Empresa, mejoré el rendimiento web de varios productos en <strong class='text-green-300 font-pixel'>Disruptive IT,</strong> mentorizando equipos, diseñando estrategias, creando dashboards y gestionando servicios en la nube. Esto resultó en una mejora del <strong class='text-green-300 font-pixel'>20%</strong> en el rendimiento general de la empresa."
   ]
 }

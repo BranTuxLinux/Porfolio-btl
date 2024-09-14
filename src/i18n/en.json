@@ -22,11 +22,11 @@
       "description": "Led the development of the RCService administrative application for Arrendamientos del Norte. Developed a backend API using Node.js and Express. Created a web application for administrators with ReactJS. Developed a mobile app in React Native for clients."
     }
   ],
-  "Projects":[
+  "Projects": [
     {
       "title": "'Mesadoko'",
       "subTitle": "Mobile Learning App",
-      "img": "/public/mesadoko.png",
+      "img": "/mesadoko.png",
       "company": "Disruptive IT",
       "description": "I developed the backend with Node.js for the international Mesadoko project by Mesa Davis Enterprises LLC, contributing to its implementation while studying. It was my first large-scale project.",
       "technologies": ["NodeJS", "Express", "MySQL", "Prisma ORM"],
@@ -36,18 +36,37 @@
       "title": "SAS SIP Inventory",
       "subTitle": "An Inventory Service for Supermarkets",
       "company": "Disruptive IT",
-      "img": "/public/Invetory.png",
+      "img": "/Inventory.png",
       "description": "I led the SAS SIP Inventory web project as a full-stack developer, focusing on scalable and efficient solutions with ReactJS. I transformed SAS SIP Inventory into a generalized solution for supermarkets, called 'SuperMarket Inventory', leading all aspects of the development.",
-      "technologies": ["ReactJS", "ZustandJS", "MySQL", "Prisma ORM", "NodeJS", "Express"]
+      "technologies": [
+        "ReactJS",
+        "ZustandJS",
+        "MySQL",
+        "Prisma ORM",
+        "NodeJS",
+        "Express"
+      ]
     },
     {
       "title": "RC SERVICE",
       "subTitle": "Training Project",
       "company": "Arrendamientos del Norte",
-      "img": "/public/Invetory.png",
+      "img": "/Invetory.png",
       "description": "I led the web project SAS SIP Inventory as a full-stack developer, focusing on scalable and efficient solutions with ReactJS. I transformed SAS SIP Inventory into a generalized solution for supermarkets, called 'SuperMarket Inventory', leading all aspects of the development.",
-      "technologies": ["ReactJS", "ZustandJS", "MySQL", "Prisma ORM", "NodeJS", "Express"]
+      "technologies": [
+        "ReactJS",
+        "ZustandJS",
+        "MySQL",
+        "Prisma ORM",
+        "NodeJS",
+        "Express"
+      ]
     }
+  ],
+  "AboutMe": [
+    "My name is Brandon Quintero. I discovered the world of programming when I was 11 years old, thanks to the mods of Age of Empires 2. After that, I was introduced to the Kali Linux operating system, and from that moment, my passion for programming and cybersecurity began. Currently, <strong class='text-green-300 font-pixel'>I am collaborating with Disruptive IT as a freelance developer.</strong>",
+    "I led the backend development for an international project, Mesadoko, a mobile application from the company <strong class='text-green-300 font-pixel'>Mesa Davis Enterprises LLC in the USA,</strong> while I was still studying.",
+    "Leadership in Full-Stack Projects. I was responsible for the project <strong class='text-green-300 font-pixel'>SAS SIP Inventory,</strong> transforming it into a complete and scalable solution for supermarkets, called <strong class='text-green-300 font-pixel'>SuperMarket Inventory.</strong> I led all aspects of development and improved the efficiency of the implemented web solutions.",
+    "At the company, I enhanced the web performance of several products at <strong class='text-green-300 font-pixel'>Disruptive IT,</strong> mentoring teams, designing strategies, creating dashboards, and managing cloud services. This resulted in a <strong class='text-green-300 font-pixel'>20%</strong> improvement in the overall performance of the company."
   ]
-  
 }

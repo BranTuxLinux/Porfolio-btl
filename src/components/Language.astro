@@ -1,6 +1,7 @@
 ---
-import { languages } from '../i18n/ui';
+
 const {currentLocale} = Astro
 console.log(currentLocale)
+
 ---
-<a class="cursor-pointer" href={currentLocale === 'es' ? '/en':'/'}><slot /></a>
+<a class={"cursor-pointer"}  href={currentLocale === 'es' ? '/en':'/'}><slot {...Astro.props} /></a>
