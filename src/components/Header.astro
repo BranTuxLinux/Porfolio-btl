@@ -2,28 +2,28 @@
 import Language from "./Language.astro";
 import LanguageIcon from "./icons/LanguageIcon.astro";
 import ThemeToggle from "./ThemeToggle.astro";
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 const navItems = [
   {
-    title: t('nav.experience'),
+    title: t("nav.experience"),
     label: "Experience",
     url: "/#Experience",
   },
   {
-    title: t('nav.projects'),
+    title: t("nav.projects"),
     label: "Projects",
     url: "/#Projects",
   },
   {
-    title: t('nav.aboutMe'),
+    title: t("nav.aboutMe"),
     label: "About Me",
     url: "/#about-me",
   },
   {
-    title: t('nav.contact'),
+    title: t("nav.contact"),
     label: "Contact",
     url: "mailto:developerbvth@gmail.com",
   },
@@ -48,7 +48,7 @@ const navItems = [
       ))
     }
     <ThemeToggle />
-    <Language >
+    <Language>
       <LanguageIcon />
     </Language>
 

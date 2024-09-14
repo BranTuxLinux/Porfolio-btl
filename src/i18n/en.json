@@ -1,7 +1,53 @@
 {
-    
   "nav.experience": "Experience",
   "nav.projects": "Projects",
-  "nav.aboutMe": "About me",
-  "nav.contact": "Contact me"
+  "nav.aboutMe": "About Me",
+  "nav.contact": "Contact",
+  "badges.work": "Available for Work",
+  "index.name": "Hello, I'm Brandon.",
+  "index.description": "+2 years of experience. <strong>Software Engineer.</strong> Medellin, Colombia 🇨🇴. Specialized in developing unique web applications.",
+  "badges.contactMe": "Contact Me",
+  "experience": [
+    {
+      "date": "April-2022 | Present",
+      "title": "Full-stack Developer",
+      "company": "Disruptive Information Technologies",
+      "description": "Developed the backend of 'Mesadoko' using Node.js. Led the SAS SIP Inventory project and transformed it into 'SuperMarket Inventory'. Improved web performance and managed servers and cloud services. Implemented innovative solutions in GitHub and accelerated documentation creation. Strengthened the company's security against DDoS attacks and cyber threats.",
+      "link": "https://disruptiveinfotech.web.app/index-es.html"
+    },
+    {
+      "date": "April-2022 | December-2023",
+      "title": "Full-stack Developer",
+      "company": "Arrendamientos del Norte",
+      "description": "Led the development of the RCService administrative application for Arrendamientos del Norte. Developed a backend API using Node.js and Express. Created a web application for administrators with ReactJS. Developed a mobile app in React Native for clients."
+    }
+  ],
+  "Projects":[
+    {
+      "title": "'Mesadoko'",
+      "subTitle": "Mobile Learning App",
+      "img": "/public/mesadoko.png",
+      "company": "Disruptive IT",
+      "description": "I developed the backend with Node.js for the international Mesadoko project by Mesa Davis Enterprises LLC, contributing to its implementation while studying. It was my first large-scale project.",
+      "technologies": ["NodeJS", "Express", "MySQL", "Prisma ORM"],
+      "link": "https://play.google.com/store/apps/details?id=com.mesadavisenterprises.mesadokoapp&hl=en_US"
+    },
+    {
+      "title": "SAS SIP Inventory",
+      "subTitle": "An Inventory Service for Supermarkets",
+      "company": "Disruptive IT",
+      "img": "/public/Invetory.png",
+      "description": "I led the SAS SIP Inventory web project as a full-stack developer, focusing on scalable and efficient solutions with ReactJS. I transformed SAS SIP Inventory into a generalized solution for supermarkets, called 'SuperMarket Inventory', leading all aspects of the development.",
+      "technologies": ["ReactJS", "ZustandJS", "MySQL", "Prisma ORM", "NodeJS", "Express"]
+    },
+    {
+      "title": "RC SERVICE",
+      "subTitle": "Training Project",
+      "company": "Arrendamientos del Norte",
+      "img": "/public/Invetory.png",
+      "description": "I led the web project SAS SIP Inventory as a full-stack developer, focusing on scalable and efficient solutions with ReactJS. I transformed SAS SIP Inventory into a generalized solution for supermarkets, called 'SuperMarket Inventory', leading all aspects of the development.",
+      "technologies": ["ReactJS", "ZustandJS", "MySQL", "Prisma ORM", "NodeJS", "Express"]
+    }
+  ]
+  
 }
