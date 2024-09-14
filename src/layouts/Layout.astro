@@ -10,7 +10,7 @@ interface Props {
   description: string;
 }
 const { description, title } = Astro.props;
-const {currentLocale} = Astro
+const { currentLocale } = Astro;
 ---
 
 <!doctype html>
@@ -22,7 +22,10 @@ const {currentLocale} = Astro
     <meta content="0;url=/en/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <title>{title}</title>
     <ViewTransitions />
   </head>
@@ -45,7 +48,6 @@ const {currentLocale} = Astro
         font-family: "Vt323", "Pixelify Sans Variable", system-ui, sans-serif;
         scroll-behavior: smooth;
       }
-      
 
       body {
         color: rgba(17, 17, 17, 0.9);
@@ -54,10 +56,12 @@ const {currentLocale} = Astro
         min-height: 100vh;
         overscroll-behavior: none;
       }
-      .background-default{
-        @apply bg-black/90
+      .background-default {
+        @apply bg-black/90;
       }
-
+      .changeTheme {
+        @apply text-black dark:text-white
+      }
       @media (prefers-reduced-motion: reduce) {
         html {
           scroll-behavior: auto;
@@ -116,6 +120,7 @@ const {currentLocale} = Astro
         }
       }
     </style>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  </body><script
+    src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"
+  ></script>
 </html>

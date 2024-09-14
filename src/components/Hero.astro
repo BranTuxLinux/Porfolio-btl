@@ -32,7 +32,7 @@ const { t } = useTranslate(Astro.url);
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-green-400 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    <p set:html={t("index.description")} />
+    <p set:html={t("index.description")} class="changeTheme"/>
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
     <SocialPill href="mailto:developerbvth@gmail.com">

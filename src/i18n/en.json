@@ -55,11 +55,11 @@
       "description": "I led the web project SAS SIP Inventory as a full-stack developer, focusing on scalable and efficient solutions with ReactJS. I transformed SAS SIP Inventory into a generalized solution for supermarkets, called 'SuperMarket Inventory', leading all aspects of the development.",
       "technologies": [
         "ReactJS",
-        "ZustandJS",
-        "MySQL",
-        "Prisma ORM",
+        "Redux",
+        "MongoDB",
         "NodeJS",
-        "Express"
+        "Express",
+        "React Native"
       ]
     }
   ],

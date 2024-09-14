@@ -22,7 +22,7 @@ const DATA: DataType | any = about;
     class="object-cover self-center w-64 h-full p-1 rotate-3 morder-first lg:order-last lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
     style="object-position: 50% 50%"
   />
-  <div class="flex gap-8 flex-col">
+  <div class="flex gap-8 flex-col changeTheme">
     {DATA?.map((text) => <p set:html={text} />)}
   </div>
 </article>
