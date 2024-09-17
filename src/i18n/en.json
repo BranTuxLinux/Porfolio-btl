@@ -37,7 +37,7 @@
       "subTitle": "An Inventory Service for Supermarkets",
       "company": "Disruptive IT",
       "img": "/Inventory.png",
-      "description": "I led the SAS SIP Inventory web project as a full-stack developer, focusing on scalable and efficient solutions with ReactJS. I transformed SAS SIP Inventory into a generalized solution for supermarkets, called 'SuperMarket Inventory', leading all aspects of the development.",
+      "description": "I led the SAS SIP Inventory web project as a full-stack developer, focusing on scalable and efficient solutions with ReactJS. I transformed SAS SIP Inventory into a generalized solution for supermarkets, called 'SuperMarket Inventory', leading all aspects of the development.<br><span class='opacity-40 text-green-400'> Note: Private application",
       "technologies": [
         "ReactJS",
         "ZustandJS",
@@ -51,8 +51,9 @@
       "title": "RC SERVICE",
       "subTitle": "Training Project",
       "company": "Arrendamientos del Norte",
-      "img": "/Invetory.png",
-      "description": "I led the web project SAS SIP Inventory as a full-stack developer, focusing on scalable and efficient solutions with ReactJS. I transformed SAS SIP Inventory into a generalized solution for supermarkets, called 'SuperMarket Inventory', leading all aspects of the development.",
+      "img": "/RcService.png",
+      "description": "RCService is an administrative application designed to manage properties at the company Arrendamientos del Sur. It allows for registering and monitoring services such as electrical repairs, plumbing, painting, cleaning, and carpentry. Workers, both internal and external, can apply to perform these tasks, entering a hiring process.<br><span class='opacity-40 text-green-400'> Note: Test users are on GitHub. </span>"
+,
       "technologies": [
         "ReactJS",
         "Redux",
@@ -60,9 +61,14 @@
         "NodeJS",
         "Express",
         "React Native"
-      ]
+      ],
+      "linkGithub": "https://github.com/BranTuxLinux/RcService-web",
+      "link": "https://rcservice-front.netlify.app/"
+
     }
+
   ],
+  "project.preview": "Preview",
   "AboutMe": [
     "My name is Brandon Quintero. I discovered the world of programming when I was 11 years old, thanks to the mods of Age of Empires 2. After that, I was introduced to the Kali Linux operating system, and from that moment, my passion for programming and cybersecurity began. Currently, <strong class='text-green-300 font-pixel'>I am collaborating with Disruptive IT as a freelance developer.</strong>",
     "I led the backend development for an international project, Mesadoko, a mobile application from the company <strong class='text-green-300 font-pixel'>Mesa Davis Enterprises LLC in the USA,</strong> while I was still studying.",

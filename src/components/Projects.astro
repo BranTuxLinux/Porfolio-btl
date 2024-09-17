@@ -2,6 +2,8 @@
 import { Image, Picture } from "astro:assets";
 import { useTranslate } from "../i18n/useTranslate";
 import LinkIcon from "./icons/LinkIcon.astro";
+import GitHubIcon from "./icons/GitHubIcon.astro";
+
 import SocialPill from "./SocialPill.astro";
 const { t } = useTranslate(Astro.url);
 interface projectTypes {
@@ -11,6 +13,7 @@ interface projectTypes {
   img: string;
   description: string;
   link?: string | any;
+  linkGithub? : string | any;
   technologies: string[];
 }
 const PROJECTS = t("Projects");
@@ -21,7 +24,7 @@ const ProjectsInfo: projectTypes[] = Array.isArray(PROJECTS) && PROJECTS;
   {
     Array.isArray(ProjectsInfo) &&
       ProjectsInfo.map(
-        ({ description, img, link, title, technologies, company }) => (
+        ({ description, img, link, title, technologies, company, subTitle, linkGithub }) => (
           <div class="flex flex-col gap-5 mb-20 md:flex-row space-x-6 changeTheme">
             <img
               src={img}
@@ -29,11 +32,12 @@ const ProjectsInfo: projectTypes[] = Array.isArray(PROJECTS) && PROJECTS;
               class="rounded-lg object-top object-cover self-center hover:scale-105 transition duration-200 ease-out md:max-w-[40%] md:scale-100"
             />
             <articule class="lg:w-[80%] md:w-full ">
-              <h1 class="text-3xl text-balance font-pixel gap-5 my-4">
+              <h1 class="text-3xl text-balance font-pixel gap-3 my-4">
                 {title}
               </h1>
+              <h2 class="text-2xl text-green-400 ">{subTitle}</h2>
               <h3 class="font-pixel text-green-300"> {company}</h3>
-              <p class="text-balance opacity-80 w-full">{description}</p>
+              <p class="text-balance opacity-80 w-full" set:html={description} />
               <label for="" class="opacity-50 font-pixel text-green-300">
                 Made width:
                 {technologies?.map((tec) => (
@@ -42,10 +46,18 @@ const ProjectsInfo: projectTypes[] = Array.isArray(PROJECTS) && PROJECTS;
               </label>
 
               <p>
+                {
+                  linkGithub && (
+                  <SocialPill href={linkGithub}>
+                    <GitHubIcon />
+                    GitHub
+                  </SocialPill>
+                  )
+                }
                 {link && (
                   <SocialPill href={link}>
                     <LinkIcon />
-                    Preview
+                    {t('project.preview')}
                   </SocialPill>
                 )}
               </p>

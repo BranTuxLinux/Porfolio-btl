@@ -37,7 +37,7 @@
       "subTitle": "Un servicio de inventario para supermercados",
       "company": "Disruptive IT",
       "img": "/Inventory.png",
-      "description": "Lideré el proyecto web SAS SIP Inventory como desarrollador full-stack, enfocándome en soluciones escalables y eficientes con ReactJS. Transformé SAS SIP Inventory en una solución generalizada para supermercados, llamada 'SuperMarket Inventory', liderando todos los aspectos del desarrollo.",
+      "description": "Lideré el proyecto web SAS SIP Inventory como desarrollador full-stack, enfocándome en soluciones escalables y eficientes con ReactJS. Transformé SAS SIP Inventory en una solución generalizada para supermercados, llamada 'SuperMarket Inventory', liderando todos los aspectos del desarrollo.<br><span class='opacity-40 text-green-400'> Nota: Aplicación privada ",
       "technologies": [
         "ReactJS",
         "ZustandJS",
@@ -51,18 +51,24 @@
       "title": "RC SERVICE",
       "subTitle": "Proyecto formativo",
       "company": "Arrendamientos del Norte",
-      "img": "/Invetory.png",
-      "description": "Lideré el proyecto web SAS SIP Inventory como desarrollador full-stack, enfocándome en soluciones escalables y eficientes con ReactJS. Transformé SAS SIP Inventory en una solución generalizada para supermercados, llamada 'SuperMarket Inventory', liderando todos los aspectos del desarrollo.",
+      "img": "/RcService.png",
+      "description": "RCService es una aplicación administrativa diseñada para gestionar inmuebles en la empresa Arrendamientos del Sur. Permite registrar y monitorizar servicios como reparaciones de electricidad, plomería, pintura, limpieza, y carpintería. Los trabajadores, tanto internos como externos, pueden postularse para realizar estas tareas, entrando en un proceso de contratación.<br><span class='opacity-40 text-green-400'> Nota: los usuarios de prueba están en el Github. </span>",
       "technologies": [
-        "ReactJS",
+        "React",
         "Redux",
-        "MongoDB",
-        "NodeJS",
+        "MUI",
+        "Axios",
+        "Node.js",
         "Express",
+        "MongoDB",
+        "Nodemailer",
         "React Native"
-      ]
+      ],
+      "linkGithub": "https://github.com/BranTuxLinux/RcService-web",
+      "link": "https://rcservice-front.netlify.app/"
     }
   ],
+  "project.preview": "Ir",
   "AboutMe": [
     "Me llamo Brandon Quintero. Descubrí el mundo de la programación cuando tenía 11 años, gracias a los mods de Age of Empires 2. Luego de eso me enseñaron el sistema operativo Kali Linux y desde ese momento empezó mi gusto por la programación y la seguridad informática. Actualmente, <strong class='text-green-300 font-pixel'>Estoy colaborando con Disruptive IT como freelance.</strong>",
     "Lideré el desarrollo del backend para un proyecto internacional, Mesadoko, una aplicación móvil de la empresa <strong class='text-green-300 font-pixel'>Mesa Davis Enterprises LLC en EE.UU.</strong> mientras estudiaba.",
