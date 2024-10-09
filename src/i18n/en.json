@@ -52,7 +52,7 @@
       "subTitle": "Training Project",
       "company": "Arrendamientos del Norte",
       "img": "/RcService.png",
-      "description": "RCService is an administrative application designed to manage properties at the company Arrendamientos del Sur. It allows for registering and monitoring services such as electrical repairs, plumbing, painting, cleaning, and carpentry. Workers, both internal and external, can apply to perform these tasks, entering a hiring process.<br><span class='opacity-40 text-green-400'> Note: Test users are on GitHub. </span>"
+      "description": "RCService is an administrative application designed to manage properties at the company Arrendamientos del Norte. It allows for registering and monitoring services such as electrical repairs, plumbing, painting, cleaning, and carpentry. Workers, both internal and external, can apply to perform these tasks, entering a hiring process.<br><span class='opacity-40 text-green-400'> Note: Test users are on GitHub. </span>"
 ,
       "technologies": [
         "ReactJS",

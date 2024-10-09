@@ -52,7 +52,7 @@
       "subTitle": "Proyecto formativo",
       "company": "Arrendamientos del Norte",
       "img": "/RcService.png",
-      "description": "RCService es una aplicación administrativa diseñada para gestionar inmuebles en la empresa Arrendamientos del Sur. Permite registrar y monitorizar servicios como reparaciones de electricidad, plomería, pintura, limpieza, y carpintería. Los trabajadores, tanto internos como externos, pueden postularse para realizar estas tareas, entrando en un proceso de contratación.<br><span class='opacity-40 text-green-400'> Nota: los usuarios de prueba están en el Github. </span>",
+      "description": "RCService es una aplicación administrativa diseñada para gestionar inmuebles en la empresa Arrendamientos del Norte. Permite registrar y monitorizar servicios como reparaciones de electricidad, plomería, pintura, limpieza, y carpintería. Los trabajadores, tanto internos como externos, pueden postularse para realizar estas tareas, entrando en un proceso de contratación.<br><span class='opacity-40 text-green-400'> Nota: los usuarios de prueba están en el Github. </span>",
       "technologies": [
         "React",
         "Redux",
