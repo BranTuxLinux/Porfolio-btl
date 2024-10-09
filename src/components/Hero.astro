@@ -4,6 +4,7 @@ import { useTranslate } from "../i18n/useTranslate.ts";
 import Badge from "./Badge.astro";
 import LinkedInIcon from "./icons/LinkedIn.astro";
 import MailIcon from "./icons/Mail.astro";
+import PDFIcon from "./icons/PDFIcon.astro";
 import SocialPill from "./SocialPill.astro";
 const { t } = useTranslate(Astro.url);
 ---
@@ -35,13 +36,17 @@ const { t } = useTranslate(Astro.url);
     <p set:html={t("index.description")} class="changeTheme"/>
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
-    <SocialPill href="mailto:developerbvth@gmail.com">
+    <SocialPill href="mailto:brandonquinterogit@gmail.com">
       <MailIcon class="size-4" />
       {t("badges.contactMe")}
     </SocialPill>
     <SocialPill href="https://www.linkedin.com/in/brantux">
       <LinkedInIcon class="size-4" />
       LinkedIn
+    </SocialPill>
+    <SocialPill href="/CV-ES.pdf" target="_blank">
+      <PDFIcon class="size-4" />
+      CV
     </SocialPill>
   </nav>
 </div>
