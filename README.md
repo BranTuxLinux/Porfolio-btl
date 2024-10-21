@@ -5,4 +5,5 @@
 - Falta idioma ingles ✅
 - Falta Foto de RC Service ✅
 - Falta Link de github con badge ❌
-- Falta pdf
+- Falta pdf ❌
+- url en disponible para trabajar ❌
